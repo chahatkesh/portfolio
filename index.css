@@ -1,6 +1,6 @@
 .favicon {
   align-self: stretch;
-  width: 14.38rem;
+  width: 14rem;
   position: relative;
   max-height: 100%;
   object-fit: cover;
@@ -34,20 +34,19 @@
 }
 .navbar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: sticky;
+  top: 0;
+  margin: 0;
+  z-index: 10;
   justify-content: space-around;
-}
-.navbar {
   align-self: stretch;
   background-color: var(--color-gray-100);
   overflow: hidden;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
   gap: 10.63rem;
-  top: 0;
-  flex-shrink: 0;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--white);
@@ -57,7 +56,6 @@
   width: 22.94rem;
   position: relative;
   letter-spacing: -1.65px;
-  line-height: 2.07rem;
   white-space: pre-wrap;
 }
 .im-chahat,
@@ -88,7 +86,7 @@
   max-width: 100%;
 }
 .n-i-t-jalandhar {
-  height: 7.06rem;
+  height: 6rem;
   justify-content: center;
   font-size: 3.88rem;
 }
@@ -311,7 +309,6 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  z-index: 3;
 }
 .instagram {
   height: 2.07rem;
@@ -359,57 +356,48 @@
   gap: var(--gap-9xs);
   max-width: 95%;
 }
-.mainphoto-icon,
-.tablermailfilled {
-  max-width: 100%;
-}
-.tablermailfilled {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 6.63rem var(--padding-12xs) 0 0;
-  box-sizing: border-box;
-}
 .mainphoto-icon {
+  width: 380px;
+  max-width: 100%;
   height: 30.88rem;
   position: relative;
   overflow: hidden;
   object-fit: cover;
 }
-.background,
+.tablermailfilled,
+.hero-text {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
 .hero {
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   box-sizing: border-box;
   max-width: 100%;
-}
-.hero {
-  flex: 1;
-  overflow: hidden;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 15vh;
-  gap: 9.5rem;
-}
-.background {
   align-self: stretch;
-  justify-content: flex-start;
   padding: 0 0 var(--padding-11xl);
   flex-shrink: 0;
   text-align: center;
   font-size: 1.86rem;
   color: var(--color-black);
   font-family: var(--font-poppins);
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 15vh;
 }
 .text {
   margin: 0;
-  height: 2.22rem;
+  height: 1.8rem;
   position: relative;
   font-size: inherit;
-  line-height: 4.5rem;
   font-weight: 700;
   font-family: inherit;
   display: inline-block;
@@ -433,18 +421,14 @@
   gap: var(--gap-smi);
 }
 .easlo-laptop-1-icon {
-  height: 15.29rem;
-  width: 13.75rem;
   position: relative;
   overflow: hidden;
-  flex-shrink: 0;
   object-fit: contain;
 }
 .hi-there-im {
   align-self: stretch;
-  height: 5rem;
   position: relative;
-  line-height: 1.67rem;
+  line-height: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -676,8 +660,7 @@
 .media-family1 {
   font-size: var(--font-size-xl);
 }
-.main-frame,
-.rectangle-container {
+.main-frame {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -685,13 +668,20 @@
   justify-content: flex-start;
   gap: var(--gap-12xs);
 }
+.main-frame,
+.parent,
+.group {
+  width: 163px;
+}
 .rectangle-container {
-  flex-direction: row;
   align-items: center;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 2rem;
   gap: var(--gap-xl);
   min-width: 5.69rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .thumb-icon {
   height: 3.19rem;
@@ -707,8 +697,7 @@
 .working-projects {
   font-size: var(--font-size-xl);
 }
-.parent,
-.rectangle-container1 {
+.parent {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -717,10 +706,14 @@
   gap: var(--gap-12xs);
 }
 .rectangle-container1 {
-  flex-direction: row;
   align-items: center;
-  gap: var(--gap-2xl);
+  padding: 2rem;
+  gap: var(--gap-xl);
   min-width: 5.69rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .certify {
   margin: 0;
@@ -745,43 +738,27 @@
   justify-content: flex-start;
   gap: var(--gap-12xs);
 }
-.body-12,
-.rectangle-container2,
-.skills-frame {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  box-sizing: border-box;
-}
-.rectangle-container2 {
-  flex: 1;
-  align-items: center;
-  padding: 0;
-  gap: var(--gap-xl);
-  min-width: 5.69rem;
-}
-.body-12,
-.skills-frame {
-  align-items: flex-start;
-  max-width: 100%;
-}
 .body-12 {
-  flex: 1;
+  width: 100vw;
+  margin: auto;
+  display: flex;
   flex-wrap: wrap;
-  padding: var(--padding-7xs) 31var (--padding-7xs) 0.38rem 19.88rem;
-  gap: 3.81rem;
-}
-.skills-frame {
-  align-self: stretch;
-  padding: 0 var(--padding-9xs) var(--padding-mini) 0;
-  flex-shrink: 0;
-  text-align: left;
+  justify-content: space-around;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-lato);
 }
+.rectangle-container2 {
+  align-items: center;
+  padding: 2rem;
+  gap: var(--gap-xl);
+  min-width: 5.69rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+}
 .body-13-icon {
-  height: 18.36rem;
   flex: 1;
   position: relative;
   max-width: 100%;
@@ -800,7 +777,6 @@
   flex-shrink: 0;
 }
 .body-14-icon {
-  height: 22.56rem;
   flex: 1;
   position: relative;
   max-width: 100%;
@@ -855,14 +831,15 @@
   font-weight: 800;
 }
 .image-3-parent {
-  flex: 0.8253;
+  width: 300px;
+  height: 300px;
   border-radius: 17.82px;
   background-color: var(--color-gray-100);
   box-shadow: 11.1px 4.5px 44.55px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: var(--padding-sm) var(--padding-20xl) var(--padding-14xl) 2.5rem;
   box-sizing: border-box;
   gap: var(--gap-sm);
@@ -881,18 +858,18 @@
   white-space: pre-wrap;
 }
 .image-3-group {
-  flex: 1;
+  width: 300px;
+  height: 300px;
   border-radius: 17.82px;
   background-color: var(--color-gray-100);
   box-shadow: 11.1px 4.5px 44.55px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: var(--padding-sm) var(--padding-sm) var(--padding-14xl);
   box-sizing: border-box;
   gap: var(--gap-sm);
-  min-width: 8rem;
 }
 .image-3-icon2 {
   width: 14.78rem;
@@ -906,14 +883,15 @@
   font-weight: 800;
 }
 .image-3-container {
-  flex: 1;
+  width: 300px;
+  height: 300px;
   border-radius: 17.82px;
   background-color: var(--color-gray-100);
   box-shadow: 11.1px 4.5px 44.55px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: var(--padding-sm) var(--padding-sm) var(--padding-14xl);
   box-sizing: border-box;
   gap: var(--gap-sm);
@@ -1144,6 +1122,7 @@
   font-family: var(--font-fraunces);
   color: var(--white);
   z-index: 3;
+  padding-left: 24px;
 }
 .linked-in-icon1 {
   flex: 1;
@@ -1303,6 +1282,7 @@
   font-family: var(--font-fraunces);
   color: var(--white);
   z-index: 3;
+  padding-left: 29px;
 }
 .frame-div {
   flex: 1;
@@ -1372,9 +1352,11 @@
   transform-origin: 0 0;
 }
 .currently-working2 {
-  position: absolute;
   top: 3.56rem;
-  left: 3.56rem;
+  left: 1.56rem;
+  line-height: 128.5%;
+  font-weight: 600;
+  position: relative;
   line-height: 128.5%;
   font-weight: 600;
   z-index: 3;
@@ -1461,6 +1443,7 @@
   position: relative;
   line-height: 110%;
   z-index: 3;
+  padding-left: 29px;
 }
 .background9,
 .medicareplus-wrapper {
@@ -1493,15 +1476,12 @@
   justify-content: center;
 }
 .group-patterned-frames {
-  width: 90rem;
-  overflow-x: auto;
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 15.38rem;
-  box-sizing: border-box;
+  justify-content: center;
   gap: var(--gap-5xl);
   max-width: 100%;
   font-size: var(--font-size-3xl-7);
@@ -1537,7 +1517,7 @@
 .view-more {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .view-more {
   cursor: pointer;
@@ -1551,7 +1531,9 @@
   white-space: nowrap;
 }
 .frames-for-backgrounds {
-  height: 27.75rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  height: auto;
   flex-direction: column;
   gap: var(--gap-base);
   max-width: 100%;
@@ -1878,40 +1860,33 @@
 }
 .group-icon,
 .image-4-icon {
-  height: 4.58rem;
-  width: 4.19rem;
+  height: 3.5rem;
   position: relative;
 }
 .image-4-icon {
-  height: 4.89rem;
-  width: 4.88rem;
+  height: 3.5rem;
   object-fit: cover;
-  min-height: 4.88rem;
 }
 .ehub-icon {
-  height: 3.17rem;
-  width: 17.69rem;
+  height: 3.1rem;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
 }
 .gw-infra-05-1,
 .logo-ai-02-1 {
-  height: 4.89rem;
-  width: 4.88rem;
+  height: 3.5rem;
   position: relative;
   border-radius: 13.33px;
   object-fit: cover;
-  min-height: 4.88rem;
 }
 .picture2-1-icon {
-  height: 4.67rem;
-  width: 3.81rem;
+  height: 3.5rem;
   position: relative;
   object-fit: cover;
 }
 .brand {
-  align-self: stretch;
+  width: 100%;
   background-color: var(--color-gray-100);
   overflow: hidden;
   display: flex;
@@ -1919,8 +1894,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-5xl) var(--padding-xl);
-  gap: var(--gap-smi);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  gap: 8px;
   flex-shrink: 0;
 }
 .contact-frame-icon {
@@ -2411,8 +2387,7 @@
   padding-left: var(--padding-xl);
   padding-right: var(--padding-xl);
 }
-.footer-12-dark,
-.responsive-portfolio {
+.footer-12-dark {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -2438,6 +2413,13 @@
   letter-spacing: normal;
   font-size: var(--font-size-29xl);
   color: var(--font-high-emphasis);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-lato);
 }
 @media screen and (max-width: 1200px) {
   .navbar {
@@ -2513,12 +2495,6 @@
     padding-right: var(--padding-86xl);
     box-sizing: border-box;
   }
-  .body-12 {
-    gap: 1.88rem;
-    padding-left: 9.94rem;
-    padding-right: 9.88rem;
-    box-sizing: border-box;
-  }
   .graphic-u-i-u-x-designing {
     padding-left: var(--padding-89xl);
     padding-right: var(--padding-89xl);
@@ -2542,7 +2518,11 @@
 }
 @media screen and (max-width: 450px) {
   .navbar {
-    gap: var(--gap-2xl);
+    height: 55px;
+  }
+  .mainphoto-icon {
+    width: 320px;
+    height: auto;
   }
   .hello {
     font-size: var(--font-size-5xl);
@@ -2561,7 +2541,8 @@
     box-sizing: border-box;
   }
   .hero {
-    padding-top: 0.1vh;
+    height: auto;
+    padding-top: 2px;
     padding-left: 14px;
     padding-right: 14px;
     box-sizing: border-box;
@@ -2598,6 +2579,7 @@
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
     box-sizing: border-box;
+    gap: 0px;
   }
   .media-family {
     font-size: var(--font-size-lgi);
@@ -2623,12 +2605,6 @@
     font-size: var(--font-size-base);
     line-height: 1.38rem;
   }
-  .body-12 {
-    gap: var(--gap-mini);
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
-  }
   .service {
     font-size: var(--font-size-10xl);
     line-height: 2.69rem;
@@ -2645,7 +2621,7 @@
     box-sizing: border-box;
   }
   .view-skill {
-    width: calc(100% - 40px);
+    width: auto;
   }
   .experience1 {
     font-size: var(--font-size-10xl);
@@ -2676,12 +2652,14 @@
     line-height: 1.25rem;
   }
   .group-patterned-frames {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
   }
   .view-more {
-    width: calc(100% - 40px);
+    width: auto;
   }
   .copyright {
     font-size: var(--font-size-10xl);
