@@ -11015,6 +11015,12 @@ h5,
   position: relative;
   z-index: 0;
 }
+@media screen and (max-width: 450px) {
+  .owl-carousel.home-slider .slider-item {
+    height: 600px;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .owl-carousel.home-slider .slider-item {
     background-position: center center !important;
