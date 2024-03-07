@@ -189,7 +189,7 @@ img {
   border-style: none;
 }
 @media (max-width: 450px) {
-  .img {
+  .img2 {
     opacity: 0.25;
   }
 }
@@ -673,10 +673,9 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
-
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -685,7 +684,6 @@ pre code {
   flex-grow: 1;
   max-width: 100%;
 }
-
 .col-auto {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -7180,6 +7178,7 @@ button.bg-dark:focus {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+  justify-content: center;
 }
 
 .d-inline-flex {
@@ -10865,7 +10864,6 @@ h5,
 }
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
   border-color: rgba(0, 0, 0, 0.5) !important;
   cursor: pointer;
   text-transform: uppercase;
@@ -11057,7 +11055,7 @@ h5,
     left: 0;
     bottom: 0;
     right: 0;
-    width: 1200px;
+    width: 1080px;
     margin: 0 auto;
   }
 }
@@ -11481,7 +11479,7 @@ h5,
 
 .services-1 {
   margin-bottom: 40px;
-  padding: 2em;
+  padding: 1.5em;
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
   -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
@@ -11677,8 +11675,15 @@ h5,
   transition: all 0.3s ease;
 }
 @media (max-width: 767.98px) {
-  .project .overlay {
-    opacity: 0.2;
+  .services-1 {
+    margin-bottom: 12px;
+    padding: 1.5em;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 85%;
+    -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
   }
 }
 .project .text {
@@ -11838,6 +11843,9 @@ textarea.form-control {
 }
 .ftco-footer .ftco-footer-widget ul li a span {
   color: rgba(255, 255, 255, 0.6);
+}
+.ftco-footer .ftco-footer-widget ul li a span:hover {
+  color: var(--yellow);
 }
 .ftco-footer .ftco-footer-widget .btn-primary {
   background: #fff !important;
