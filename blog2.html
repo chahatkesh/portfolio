@@ -80,61 +80,62 @@
         <div class="row">
           <div class="col-lg-8 ftco-animate">
             <h2 class="mb-3">
-              Organising Your Figma Pages using Hierarchical Header Components
+              Why designers should move from px to rem (and how to do that in
+              Figma)
             </h2>
             <p>
-              Organising your Figma Files well is a crucial aspect of your
-              Design Handoff, especially when you do not use extra tools like
-              Zeplin or Storybook (common in a lot of startups) Just like your
-              product, your Design Files also has customers. They are your
-              Developers and Project Managers. Properly organised Figma Files
-              keep your Devs & PMs happy which leads to a happy team. A happy
-              team leads to a happy product, resulting in happier customers. And
-              what does that get us? Praise and revenue. Both are extremely
-              valuable to your company. Let’s take a look at how you can
-              organise your Figma Frames through Header Components Let’s explore
-              the anatomy of our header:
+              If you are anything like me, you happily used Pixel (px) in Sketch
+              and Figma during the past years without thinking much about it. It
+              is the unit they gave me. Surely it is correct, and if not, the
+              development team can fix that, no? Plus, there are a lot of people
+              saying my design should be pixel perfect, right? Not quite (unless
+              you interpreted “pixel perfect” as avoiding half-pixel). Let’s get
+              started:
             </p>
             <p>
               <img src="images/image_3.jpg" alt="" class="img-fluid" />
             </p>
 
-            <h2 class="mb-3 mt-5">Some Ponits to keep in mind</h2>
+            <h2 class="mb-3 mt-5"
+              >So What Is the Problem When Using PX Values?</h2
+            >
             <p>
-              1. The Base Layer I would suggest you to fill the base with one of
-              your brand colours. It is better to stick to your branding palette
-              to make sure the entire vibe of your Design Files represents your
-              Brand Identity. I've applied one of my colour styles on the base.
-              The base has Horizontal Constraints (HC) set to 'Left & Right' and
-              Vertical Constraints (VC) set to 'Top & Bottom'. This is to make
-              sure I can stretch my header frame in any way without breaking the
-              design.
+              Pixel in design software (e.g. in Figma) are absolute units,
+              meaning, that 1px corresponds to a defined size (later this will
+              be translated to different screen resolutions but in Figma, we
+              work at 1x where 1px=1pt). Now a fixed value seems like a
+              designer’s dream, total control. Fixing everything so it looks
+              perfect! However, using px(besides other issues) can create
+              serious accessibility barriers such as overruling the font size
+              preferences set by users once translated to CSS.
             </p>
             <p>
-              2. Gradient Layer Now to add some extra flair, I've also add
-              another rectangle with a dark linear ramp on top of it. Do not add
-              the gradient directly on your Base Layer. You'll understand why
-              I've added two separate layers for the Header fill in a while 😏
+              <b>Font-Size Preference? What Is That?</b>
             </p>
             <p>
-              3. Branding (Optional) If needed, you can design a branded PNG
-              overlay or simply put your logo on the right side of the header.
-              It should be something really subtle. A quick hack is to set the
-              blend mode of your logo/branding PNG to “Overlay” instead of “Pass
-              Through” from the Image Properties Panel. Things look better with
-              an opacity of 20% at Overlay. You don't want your branding PNG to
-              compete for extra attention.
+              Every browser has a default root font size, which means unstyled
+              text will be displayed in a certain size, usually 16px. Users can
+              alter this root font-size via the browser setting. Try it out
+              yourself Chrome → More Menu(three little dots, top right) >
+              Settings > Appearance > Either custom font, or Font size both do
+              the trick. Especially users user with vision impairment might rely
+              on this! Not only users can overwrite this preference. Developers
+              can also alter the root font-size with CSS, using the html tag.
             </p>
+
             <p>
-              4. Text Labels for setting Context I always keep two text labels.
-              The first one gives a broader view and the second one gives the
-              specific context for the frames placed next to it. I've added both
-              these texts into an Auto-Layout and set the auto-layout's HC to
-              Left and VC to Centre. With this, we are finally done designing
-              our header. Make sure you make a component of this and publish it.
-              This would allow you to have access to this component in all your
-              project files. If you ever decide to change anything, once single
-              change would trickle down to all your headers in a click.
+              <b>PX Will Overwrite Users Preferences </b> </p
+            ><p>
+              Let me show you an example. So you defined all your font sizes in
+              px. To simplify this, let's say your H1is 48px and your copy text
+              p is 16px. Sounds like reasonable readable values on-screen. text
+              set in px stays the same, even if the root font size is changes by
+              the user px units will inhibit users browser font-size settings
+              However, as px are fixed they overwrite any browser settings. It
+              is like they cut the communication to the root-font size. Even if
+              the user changes the root size, in our example from 16pxto 24px,
+              this will not affect the size displayed. So you created a
+              usability barrier.
             </p>
             <div class="about-author d-flex p-4 bg-dark">
               <div class="bio mr-5">
